@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/tomatomato/static/css/main.b33680e0.css",
+    "main.js": "/tomatomato/static/js/main.3123e666.js",
+    "static/media/img_tomoto1.jpg": "/tomatomato/static/media/img_tomoto1.839b025668d6eca8763e.jpg",
+    "static/media/img_tomoto7.jpg": "/tomatomato/static/media/img_tomoto7.4f3ef67bad819a13c9b3.jpg",
+    "static/media/bg_tomato2.jpg": "/tomatomato/static/media/bg_tomato2.40adddbf6428308c6183.jpg",
+    "static/media/img_tomoto8.jpg": "/tomatomato/static/media/img_tomoto8.671d741a00664dbe2140.jpg",
+    "static/media/img_tomoto5.jpg": "/tomatomato/static/media/img_tomoto5.81f9cb86766df6206008.jpg",
+    "static/media/bg_tomato1.jpg": "/tomatomato/static/media/bg_tomato1.fc4272eb8f41cf1be712.jpg",
+    "static/media/img_tomoto3.jpg": "/tomatomato/static/media/img_tomoto3.0fbb2f613b0f07de0fe9.jpg",
+    "static/media/img_tomato_sandwich.jpg": "/tomatomato/static/media/img_tomato_sandwich.2aa6fcde25af97518139.jpg",
+    "static/media/img_tomato_soup.jpg": "/tomatomato/static/media/img_tomato_soup.e4891812d73e9b167c9a.jpg",
+    "static/media/img_tomoto9.jpg": "/tomatomato/static/media/img_tomoto9.96d0058348843302e96e.jpg",
+    "static/media/img_tomoto4.jpg": "/tomatomato/static/media/img_tomoto4.5e5cec7f016fcec476b9.jpg",
+    "static/media/img_tomato_salad.jpg": "/tomatomato/static/media/img_tomato_salad.5571197395a7b4f1738b.jpg",
+    "static/media/img_tomato_pasta.jpg": "/tomatomato/static/media/img_tomato_pasta.9d800c897edbb59c0bac.jpg",
+    "static/media/img_tomoto6.jpg": "/tomatomato/static/media/img_tomoto6.6f0a777317b4774e7af0.jpg",
+    "static/media/img_tomoto2.jpg": "/tomatomato/static/media/img_tomoto2.47396c7884669b73fed9.jpg",
+    "index.html": "/tomatomato/index.html",
+    "main.b33680e0.css.map": "/tomatomato/static/css/main.b33680e0.css.map",
+    "main.3123e666.js.map": "/tomatomato/static/js/main.3123e666.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b33680e0.css",
+    "static/js/main.3123e666.js"
+  ]
+}
