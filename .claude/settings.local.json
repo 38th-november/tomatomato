@@ -5,7 +5,9 @@
       "Bash(npx prettier:*)",
       "mcp__playwright__browser_click",
       "mcp__playwright__browser_type",
-      "Read(//c/Users/똑똑이/**)"
+      "Read(//c/Users/똑똑이/**)",
+      "Bash(npm install:*)",
+      "Bash(npm start)"
     ],
     "deny": [],
     "ask": []

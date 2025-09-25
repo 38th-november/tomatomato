@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./game.css";
 
 function Game() {
-  const navigate = useNavigate();
-
   const questions = [
     {
       question: "토마토에 풍부한 비타민은?",
@@ -66,7 +63,7 @@ function Game() {
 
   return (
     <div className="game-page">
-      <h1>🍅 토마토 퀴즈</h1>
+      <h1 className="game-title">Tomato Quiz</h1>
       {showScore ? (
         <div className="score-section">
           <h2>결과</h2>
@@ -88,10 +85,9 @@ function Game() {
         </div>
       ) : (
         <div className="quiz-section">
-          <div className="progress">
-            문제 {current + 1} / {questions.length}
+          <div className="quiz-progress">
+            문제{current + 1}. {questions[current].question}
           </div>
-          <h3 className="question">{questions[current].question}</h3>
           <div className="options">
             {questions[current].options.map((option) => (
               <button key={option} className="option-btn" onClick={() => handleAnswer(option)}>

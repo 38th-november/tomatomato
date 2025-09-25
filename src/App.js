@@ -3,9 +3,9 @@ import { NavLink, Route, Routes, useLocation } from "react-router-dom";
 import About from "./components/About";
 import "./App.css";
 import backgroundTomato2 from "./images/background/bg_tomato2.jpg";
-import Recipes from "components/Recipes";
-import Gallery from "components/Gallery";
-import Game from "components/Game";
+import Recipes from "./components/Recipes";
+import Gallery from "./components/Gallery";
+import Game from "./components/Game";
 
 function App() {
   const location = useLocation();

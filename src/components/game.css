@@ -17,3 +17,7 @@
 .game-page button:hover {
   background-color: #d18181;
 }
+
+.game-title {
+  color: #b6331c;
+}
