@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tomatomato/static/css/main.b33680e0.css",
-    "main.js": "/tomatomato/static/js/main.3123e666.js",
+    "main.css": "/tomatomato/static/css/main.3057ed36.css",
+    "main.js": "/tomatomato/static/js/main.0c7c9f73.js",
     "static/media/img_tomoto1.jpg": "/tomatomato/static/media/img_tomoto1.839b025668d6eca8763e.jpg",
     "static/media/img_tomoto7.jpg": "/tomatomato/static/media/img_tomoto7.4f3ef67bad819a13c9b3.jpg",
     "static/media/bg_tomato2.jpg": "/tomatomato/static/media/bg_tomato2.40adddbf6428308c6183.jpg",
@@ -17,12 +17,13 @@
     "static/media/img_tomato_pasta.jpg": "/tomatomato/static/media/img_tomato_pasta.9d800c897edbb59c0bac.jpg",
     "static/media/img_tomoto6.jpg": "/tomatomato/static/media/img_tomoto6.6f0a777317b4774e7af0.jpg",
     "static/media/img_tomoto2.jpg": "/tomatomato/static/media/img_tomoto2.47396c7884669b73fed9.jpg",
+    "static/media/bg_tomato3.jpg": "/tomatomato/static/media/bg_tomato3.b2b32663a78562e02895.jpg",
     "index.html": "/tomatomato/index.html",
-    "main.b33680e0.css.map": "/tomatomato/static/css/main.b33680e0.css.map",
-    "main.3123e666.js.map": "/tomatomato/static/js/main.3123e666.js.map"
+    "main.3057ed36.css.map": "/tomatomato/static/css/main.3057ed36.css.map",
+    "main.0c7c9f73.js.map": "/tomatomato/static/js/main.0c7c9f73.js.map"
   },
   "entrypoints": [
-    "static/css/main.b33680e0.css",
-    "static/js/main.3123e666.js"
+    "static/css/main.3057ed36.css",
+    "static/js/main.0c7c9f73.js"
   ]
 }
