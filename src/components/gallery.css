@@ -21,15 +21,15 @@
 
 .gallery-item {
   width: 100%;
-  aspect-ratio: 1 / 1; /* 가로세로 동일 */
-  overflow: hidden; /* 이미지가 넘치지 않도록 */
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
   border-radius: 10px;
 }
 
 .gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 비율 유지하면서 빈 공간 없이 채우기 */
+  object-fit: cover;
   transition: transform 0.2s;
 }
 
@@ -38,7 +38,6 @@
   cursor: pointer;
 }
 
-/* 업로드 버튼 (갤러리 아이템처럼 보이도록) */
 .upload-item {
   display: flex;
   justify-content: center;
@@ -60,18 +59,17 @@
 }
 
 .upload-item:active {
-  transform: scale(0.95); /* 클릭 시 눌리는 효과 */
+  transform: scale(0.95);
 }
 
 .plus-sign {
-  pointer-events: none; /* 클릭은 input으로 전달 */
+  pointer-events: none;
 }
 
 .upload-item-btn {
   display: none;
 }
 
-/* ===================== 반응형 ===================== */
 @media (max-width: 1024px) {
   .gallery-page {
     padding: 20px 50px;
@@ -88,11 +86,11 @@
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr; /* 모바일에서는 1열로 */
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
   .gallery-item {
-    aspect-ratio: 1 / 1; /* 여전히 정사각형 유지 */
+    aspect-ratio: 1 / 1;
   }
 }

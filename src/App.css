@@ -18,7 +18,6 @@ body {
   text-align: center;
 }
 
-/* Home 전용 배경 */
 .app.home {
   position: fixed;
   top: 0;
@@ -36,16 +35,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 1rem;
 }
 
 .app-title {
   color: #ffffff;
   font-weight: bold;
-  font-size: 40pt;
+  font-size: 2.5rem;
 }
 
-/* Home일 때는 반투명 오버레이 */
 .app.home .app-header {
   background: rgba(51, 5, 5, 0.3);
 }
@@ -65,7 +63,7 @@ body {
   text-decoration: none;
   color: #4d4d4d;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 8px 16px;
   border-radius: 4px;
   transition: all 0.3s ease;
@@ -95,7 +93,7 @@ body {
 
   .nav-bar a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 6px 12px;
     color: #e49a9a;
   }
@@ -115,7 +113,6 @@ body {
   }
 }
 
-/* 접근성 개선 */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

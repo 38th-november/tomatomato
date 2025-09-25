@@ -1,45 +1,46 @@
 import React, { useState } from "react";
 import "./game.css";
+import bgTomato from "../images/background/bg_tomato3.jpg";
 
 function Game() {
   const questions = [
     {
-      question: "토마토에 풍부한 비타민은?",
-      options: ["비타민 C", "비타민 D", "비타민 B12"],
-      answer: "비타민 C",
+      question: "Which vitamin is abundant in tomatoes?",
+      options: ["Vitamin C", "Vitamin D", "Vitamin B12"],
+      answer: "Vitamin C",
     },
     {
-      question: "토마토의 원산지는 어느 대륙인가요?",
-      options: ["유럽", "남아메리카", "아시아"],
-      answer: "남아메리카",
+      question: "What continent is the origin of tomatoes?",
+      options: ["Europe", "South America", "Asia"],
+      answer: "South America",
     },
     {
-      question: "잘 익은 토마토의 색깔은?",
-      options: ["초록색", "빨간색", "파란색"],
-      answer: "빨간색",
+      question: "What color are ripe tomatoes?",
+      options: ["Green", "Red", "Blue"],
+      answer: "Red",
     },
     {
-      question: "토마토의 주요 성분 중 강력한 항산화제는?",
-      options: ["라이코펜", "베타카로틴", "안토시아닌"],
-      answer: "라이코펜",
+      question: "What is the powerful antioxidant in tomatoes?",
+      options: ["Lycopene", "Beta-carotene", "Anthocyanin"],
+      answer: "Lycopene",
     },
     {
-      question: "토마토는 식물학적으로 어디에 분류되나요?",
-      options: ["채소", "과일", "곡물"],
-      answer: "과일",
+      question: "Botanically, tomatoes are classified as?",
+      options: ["Vegetable", "Fruit", "Grain"],
+      answer: "Fruit",
     },
     {
-      question: "세계에서 토마토 생산량이 가장 많은 나라는?",
-      options: ["미국", "이탈리아", "중국"],
-      answer: "중국",
+      question: "Which country produces the most tomatoes in the world?",
+      options: ["United States", "Italy", "China"],
+      answer: "China",
     },
     {
-      question: "토마토가 유럽에 처음 전해진 시기는?",
-      options: ["15세기", "16세기", "17세기"],
-      answer: "16세기",
+      question: "When were tomatoes first introduced to Europe?",
+      options: ["15th century", "16th century", "17th century"],
+      answer: "16th century",
     },
     {
-      question: "토마토 100g당 대략적인 칼로리는?",
+      question: "How many calories are in 100g of tomatoes?",
       options: ["18kcal", "50kcal", "80kcal"],
       answer: "18kcal",
     },
@@ -62,41 +63,41 @@ function Game() {
   };
 
   return (
-    <div className="game-page">
-      <h1 className="game-title">Tomato Quiz</h1>
-      {showScore ? (
-        <div className="score-section">
-          <h2>결과</h2>
-          <div className="score-display">
-            {score} / {questions.length}
+    <div className="game-page" style={{ backgroundImage: `url(${bgTomato})` }}>
+      <div className="game-overlay">
+        <h1 className="game-title">Tomato Quiz</h1>
+        {showScore ? (
+          <div className="score-section">
+            <div className="score-display">
+              {score} / {questions.length}
+            </div>
+            <p className="score-message">
+              {score === questions.length
+                ? "Perfect! 🎉"
+                : score >= questions.length * 0.8
+                  ? "Great job! 👏"
+                  : score >= questions.length * 0.6
+                    ? "Good work! 😊"
+                    : "Try again! 💪"}
+            </p>
+            <button className="restart-btn" onClick={resetGame}>
+              Try Again
+            </button>
           </div>
-          <p className="score-message">
-            {score === questions.length
-              ? "완벽해요! 🎉"
-              : score >= questions.length * 0.8
-                ? "잘했어요! 👏"
-                : score >= questions.length * 0.6
-                  ? "괜찮네요! 😊"
-                  : "다시 도전해보세요! 💪"}
-          </p>
-          <button className="restart-btn" onClick={resetGame}>
-            다시 시작
-          </button>
-        </div>
-      ) : (
-        <div className="quiz-section">
-          <div className="quiz-progress">
-            문제{current + 1}. {questions[current].question}
+        ) : (
+          <div className="quiz-section">
+            <span className="quiz-progress">{current + 1}.</span>
+            <span className="quiz-question">{questions[current].question}</span>
+            <div className="options">
+              {questions[current].options.map((option) => (
+                <button key={option} className="option-btn" onClick={() => handleAnswer(option)}>
+                  {option}
+                </button>
+              ))}
+            </div>
           </div>
-          <div className="options">
-            {questions[current].options.map((option) => (
-              <button key={option} className="option-btn" onClick={() => handleAnswer(option)}>
-                {option}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
