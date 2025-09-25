@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+/* Home 전용 배경 */
+.app.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.app-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.app-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 40pt;
+}
+
+/* Home일 때는 반투명 오버레이 */
+.app.home .app-header {
+  background: rgba(51, 5, 5, 0.3);
+}
+
+.nav-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-bar a:hover {
+  color: #999999;
+  transform: translateY(-1px);
+}
+
+.nav-bar a.active-link {
+  color: #9e1b1b;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    position: absolute;
+    padding: 20px 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    color: #e49a9a;
+  }
+
+  .nav-bar a:hover {
+    color: #999999;
+    transform: translateY(-1px);
+    border: none;
+  }
+
+  .nav-bar a.active-link {
+    color: #000000;
+  }
+
+  .app-content {
+    padding: 10px;
+  }
+}
+
+/* 접근성 개선 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
